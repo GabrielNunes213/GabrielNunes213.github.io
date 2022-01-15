@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="arquivos/css/style.css">
     <!--Link icones-->
     <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" type="image/gif/png" href="arquivos/img/icone-site.png">
 </head>
 <body>
     
@@ -40,15 +41,20 @@
     <main class="l-main">
         <section class="home bd-grid" id="home">
             <div class="home__data">
-                <h1 class="home__title">Olá,<br>Meu nome é <span class="home__title-color">Gabriel</span><br> Desenvolvedor web</h1>
+                <h1 class="home__title">Olá,<br>Meu nome é <span class="home__title-color">Gabriel</span><br> Desenvolvedor de Software</h1>
 
-                <a href="#" class="button">Contatos</a>
+                <a href="#contact" class="button">Contatos</a>
             </div>
 
             <div class="home__social">
-                <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
-                <a href="#" class="home__social-icon"><i class='bx bxl-behance'></i></a>
-                <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/gabriel-vieira-nunes-648531227/" class="home__social-icon" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                
+                <a href="#" class="home__social-icon" onclick="window.open(
+                    'http://api.whatsapp.com/send?1=pt_BR&phone=5531994969389', 
+                    '_system', 'location=yes'); return false;"><i class='bx bxl-whatsapp'></i>
+                </a>
+                
+                <a href="https://github.com/GabrielNunes213" class="home__social-icon" target="_blank"><i class='bx bxl-github'></i></a>
             </div>
 
             <div class="home__img">
@@ -75,7 +81,7 @@
 
                 <div>
                     <h2 class="about__subtitle">Meu nome é Gabriel</h2>
-                    <p class="about__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, perspiciatis eaque repellat magnam quae nesciunt a maxime? Officia, quas. Officia optio earum saepe ipsa eaque dolorem labore consectetur deleniti molestias!</p>
+                    <p class="about__text">Olá, meu nome é Gabriel Vieira Nunes, sou de Belo Horizonte - Minas Gerais, recentemente finalizei um curso Técnico em informática para Internet no Senai-CTTI no qual tive contato com HTML, CSS, JavaScript, Bootstrap, PHP e MySQL, no momento continuo estudando e estou em busca da minha primeira oportunidade de desenvolvedor Junior, para assim poder iniciar um curso superior na área de TI e continuar aprendendo mais.</p>
 
                 </div>
             </div>
@@ -89,7 +95,7 @@
             <div class="skills__container bd-grid">
                 <div>
                     <h2 class="skills__subtitle">Habilidades Profissionais</h2>
-                    <p class="skills__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat hic sapiente odit fugit modi, rerum atque excepturi perferendis nihil explicabo iusto ad necessitatibus placeat dignissimos perspiciatis quo, dolor repudiandae voluptates.</p>
+                    <p class="skills__text">Já tive contato com HTML, CSS, JavaScript, Bootstrap, PHP e MySQL, faço alguns projetos para treinar meus conhecimentos e aprender coisas novas.</p>
                     <div class="skills__data">
 
                         <div class="skills__names">
@@ -98,7 +104,7 @@
                         </div>
 
                         <div>
-                            <span class="skills__percentage">95%</span>
+                            <span class="skills__percentage"></span>
                         </div>
 
                         <div class="skills__bar skills__html">
@@ -114,7 +120,7 @@
                         </div>
     
                         <div>
-                            <span class="skills__percentage">85%</span>
+                            <span class="skills__percentage"></span>
                         </div>
     
                         <div class="skills__bar skills__css">
@@ -130,7 +136,7 @@
                         </div>
     
                         <div>
-                            <span class="skills__percentage">65%</span>
+                            <span class="skills__percentage"></span>
                         </div>
     
                         <div class="skills__bar skills__javascript">
@@ -146,7 +152,7 @@
                         </div>
     
                         <div>
-                            <span class="skills__percentage">45%</span>
+                            <span class="skills__percentage"></span>
                         </div>
     
                         <div class="skills__bar skills__bootstrap">
@@ -162,7 +168,7 @@
                         </div>
     
                         <div>
-                            <span class="skills__percentage">35%</span>
+                            <span class="skills__percentage"></span>
                         </div>
     
                         <div class="skills__bar skills__php">
@@ -178,7 +184,7 @@
                         </div>
     
                         <div>
-                            <span class="skills__percentage">15%</span>
+                            <span class="skills__percentage"></span>
                         </div>
     
                         <div class="skills__bar skills__mysql">
@@ -191,7 +197,7 @@
                 
 
                 <div>
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem Habilidades" class="skills__img">
+                    <img src="arquivos/img/habilidades-img.png" alt="Imagem Habilidades" class="skills__img">
                 </div>
             </div>
         </section>
@@ -201,42 +207,54 @@
         <section class="projetos section" id="work">
             <h2 class="section-titulo">Projetos</h2>
 
-            <div class="projetos__container bd-grid">
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 1</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+            <a href="https://gabrielnunes213.github.io/Sa-03-GabrielVieiraNunes/" target="_blank">
+                <div class="projetos__container bd-grid">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/site-ferramentas.png" alt="Imagem">
+                        <h2>Loja de Ferramentas</h2>
+                        <p>Loja de Ferramentas feita durante o curso utilizando HTML, CSS e Bootstrap.</p>
+                    </div>
+                </a>
 
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 2</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+                <a href="https://gabrielnunes213.github.io/Site-Fotografo/" target="_blank">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/site-fotografo.PNG" alt="Imagem">
+                        <h2>Site Fotografo</h2>
+                        <p>Site Fotografo utilizando HTML e CSS.</p>
+                    </div>
+                </a>
 
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 3</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+                <a href="https://github.com/GabrielNunes213/Sistema-de-Login-PHP" target="_blank">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/sistema-login.png" alt="Imagem">
+                        <h2>Sistema de Login</h2>
+                        <p>Sistema de Login feito para estudar utilizando HTML, CSS, PHP, JavaScript e MySQL.</p>
+                    </div>
+                </a>
 
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 4</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+                <a href="https://github.com/GabrielNunes213/Sa-03-Crud-OOP" target="_blank">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/clinica-estetica.png" alt="Imagem">
+                        <h2>Clínica Estética CRUD</h2>
+                        <p>Projeto CRUD(Create, Read, Update, Delete) de uma clínica de Estética utilizando HTML, CSS, PHP e MySQL.</p>
+                    </div>
+                </a>
 
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 5</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+                <a href="https://github.com/GabrielNunes213/Trabalho-MySQL" target="_blank">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/trabalho-mysql.png" alt="Imagem">
+                        <h2>Trabalho MySQL</h2>
+                        <p>Este foi um trabalho de banco de dados MySQL feito durante o curso Técnico.</p>
+                    </div>
+                </a>
 
-                <div class="projetos__img">
-                    <img src="arquivos/img/habilidades.jpg" alt="Imagem">
-                    <h2>projeto 6</h2>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti consequatur mollitia enim excepturi impedit, quae maxime unde. Optio, inventore? Ipsam voluptates veniam in sapiente eveniet quaerat, illum quia suscipit eius.</p>
-                </div>
+                <a href="https://gabrielnunes213.github.io/Calculadora/" target="_blank">
+                    <div class="projetos__img">
+                        <img src="arquivos/img/projetos-img/calculadora.png" alt="Imagem">
+                        <h2>Calculadora</h2>
+                        <p>Calculadora Feita com HTML, CSS e JavaScript.</p>
+                    </div>
+                </a>
 
             </div>
         </section>
@@ -252,7 +270,7 @@
 
             <div class="contatos__geral">
 
-                <a href="#" target="_blank">
+                <a href="https://github.com/GabrielNunes213" target="_blank">
                 <div class="contatos-div">
                     <i class="bx bxl-github"></i>
                     <div class="contato-txt">
@@ -262,17 +280,17 @@
                 </div>
                 </a>
 
-                <a href="mail:gabrielvieira.n06@gmail.com" target="_blank">
+                <a href="mailto:gabrielvieira.n06@gmail.com">
                 <div class="contatos-div">
                     <i class="bx bxl-gmail"></i>
                     <div class="contato-txt">
                         <h2>E-mail</h2>
-                        <span>Email Gabriel</span>
+                        <span>gabrielvieira.n06@gmail.com</span>
                     </div>
                 </div>
                 </a>
 
-                <a href="#" target="_blank">
+                <a href="https://www.linkedin.com/in/gabriel-vieira-nunes-648531227/" target="_blank">
                 <div class="contatos-div">
                     <i class="bx bxl-linkedin"></i>
                     <div class="contato-txt">
@@ -282,12 +300,12 @@
                 </div>
                 </a>
 
-                <a href="tel:31994969389" target="_blank">
+                <a href="tel:31994969389">
                 <div class="contatos-div">
                     <i class="bx bxs-phone-call"></i>
                     <div class="contato-txt">
                         <h2>Telefone</h2>
-                        <span>Celular Gabriel</span>
+                        <span>(31) 99496-9389</span>
                     </div>
                 </div>
                 </a>
@@ -297,17 +315,26 @@
     </main>
 
     <!--FOOTER-->
+    <div class="baixarcurriculo">
+    <a href="arquivos/curriculo/Gabriel-Vieira-Nunes.pdf" download="Curriculo Gabriel">
+        <div class="botao-curriculo">
+            <h2 class="baixarcurriculo-h2">Baixar Curriculo</h2>
+            <i class="bx bxs-download"></i>
+        </div>
+    </a>
+    </div>
 
     <footer class="footer">
         <p class="footer__titulo">Gabriel</p>
         <div class="footer__social">
-            <a href="#" class="footer__icone"><i class="bx bxl-github"></i></a>
-            <a href="#" class="footer__icone"><i class="bx bxl-linkedin"></i></a>
-            <a href="#" class="footer__icone"><i class="bx bxs-phone-call"></i></a>
+            <a href="https://github.com/GabrielNunes213" class="footer__icone" target="_blank"><i class="bx bxl-github"></i></a>
+            <a href="https://www.linkedin.com/in/gabriel-vieira-nunes-648531227/" class="footer__icone"><i class="bx bxl-linkedin"></i></a>
+            <a href="tel:31994969389" class="footer__icone"><i class="bx bxs-phone-call"></i></a>
         </div>
-        <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        <p class="footer__copy">&#169; Projeto Canal Bedimcode(Youtube) Todos Direitos Reservados.</p>
     </footer>
 
+    <!--O script abaixo é o que faz a pagina carregar devagar-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <script src="arquivos/js/script.js"></script>
